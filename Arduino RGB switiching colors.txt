@@ -1,0 +1,28 @@
+//aRDUINO code RGB switching lights
+
+int a = 2;
+int b = 3;
+int c = 4;
+
+
+void setup(){
+  pinMode(a, OUTPUT);
+  pinMode(b, OUTPUT);
+  pinMode(c, OUTPUT);
+}
+
+void loop(){
+  digitalWrite(a, LOW);
+  digitalWrite(b, HIGH);
+  digitalWrite(c, LOW);
+  delay(500);
+  digitalWrite(a, LOW);
+  digitalWrite(b, LOW);
+  digitalWrite(c, HIGH);
+  delay(500);
+  digitalWrite(a, HIGH);
+  digitalWrite(b, LOW);
+  digitalWrite(c, LOW);
+  delay(500);
+}
+ 
